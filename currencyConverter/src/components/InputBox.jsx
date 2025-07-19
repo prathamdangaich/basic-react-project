@@ -38,8 +38,8 @@ function InputBox({
                     onChange={(e) => onCurrencyChange && onCurrencyChange(e.target.value)}
                     disabled={currencyDisable}
                 >
-                    
-                        {currencyOptions.map((currency) => (<option key={currency} value={currency}>   //Remember the use of key in loop in react to improve the performance
+                        {/* Remember the use of key in loop in react to improve the performance */}
+                        {currencyOptions.map((currency) => (<option key={currency} value={currency}> 
                                                                 {currency}
                                                             </option>))}
                 
